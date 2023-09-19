@@ -1,0 +1,2 @@
+# cryptoMonkey
+Unpredictable crypto-bot
