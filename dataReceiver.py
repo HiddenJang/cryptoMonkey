@@ -26,7 +26,7 @@ async def startParsing():
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(url) as response:
-                parsData = (await response.json())
+                parsData = await response.json()
         return parsData
     except Exception as ex:
         logger.error(ex)
