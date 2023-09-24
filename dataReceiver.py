@@ -20,9 +20,12 @@ def init_logger(name):
 init_logger('CryptoMonkey')
 logger = logging.getLogger('CryptoMonkey.dataReceiver')
 
-url = 'https://api.huobi.pro/market/tickers'
-url = 'https://api.huobi.pro/v1/common/symbols'
-async def startParsing():
+
+
+async def startParsing(tradePare):
+    url = 'https://api.huobi.pro/market/tickers'
+    url = 'https://api.huobi.pro/v1/common/symbols'  ## все котировки на все криптовалюты
+    url = f'https://api.huobi.pro/market/trade?symbol={tradePare}' ##текущая цена криптовалюты
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(url) as response:
@@ -31,7 +34,7 @@ async def startParsing():
     except Exception as ex:
         logger.error(ex)
 
-result = asyncio.run(startParsing())
+result = asyncio.run(startParsing('btcrub'))
 # for coin in result:
 #     #print(coin.get('symbol'))
 #     if coin.get('symbol') == 'btcusd':
