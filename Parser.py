@@ -23,7 +23,7 @@ logger = logging.getLogger('CryptoMonkey.Parser')
 
 
 async def startParsing(exchange: str, baseCurrency: str, quoteCurrency: str) -> dict:
-    """Функция получения данных от выбранной криптобиржи и выбранным валютам"""
+    """Функция получения данных от выбранной криптобиржи по выбранным валютам"""
     if exchange == 'huobi':
         url = f'https://api.huobi.pro/market/trade?symbol={baseCurrency}{quoteCurrency}' ##текущая цена криптовалюты
         try:
