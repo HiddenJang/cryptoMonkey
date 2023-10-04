@@ -40,4 +40,4 @@ def startTrade(
         #         account_obj.print_object()
 
 
-startTrade('huobi',('d896772a-7e580e93-frbghq7rnm-69eb5','b42b5258-2ae7ea40-b299b36e-b8583'), 'btc/usdt', 'buy')
+startTrade('huobi',('',''), 'btc/usdt', 'buy')
