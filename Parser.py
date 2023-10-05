@@ -1,9 +1,9 @@
 import aiohttp
 import asyncio
 import logging
-import requests
 
 def init_logger(name):
+    """Инициализация логгера, убрать после разработки главного модуля"""
     logger = logging.getLogger(name)
     FORMAT = "%(asctime)s -- %(name)s -- %(lineno)s -- %(levelname)s -- %(message)s"
     logger.setLevel(logging.DEBUG)
@@ -17,26 +17,23 @@ def init_logger(name):
     logger.addHandler(fh)
     logger.debug('logger was initialized')
 
+## создание и инициализация логгера ##
 init_logger('CryptoMonkey')
-logger = logging.getLogger('CryptoMonkey.dataReceiver')
+logger = logging.getLogger('CryptoMonkey.Parser')
 
 
+async def startParsing(exchange: str, baseCurrency: str, quoteCurrency: str) -> dict:
+    """Функция получения данных от выбранной криптобиржи по выбранным валютам"""
+    if exchange == 'huobi':
+        url = f'https://api.huobi.pro/market/trade?symbol={baseCurrency}{quoteCurrency}' ##текущая цена криптовалюты
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.get(url) as response:
+                    currencyData = await response.json()
+            return currencyData
+        except Exception as ex:
+            logger.error(ex)
 
-async def startParsing(tradePare):
-    url = 'https://api.huobi.pro/market/tickers'
-    url = 'https://api.huobi.pro/v1/common/symbols'  ## все котировки на все криптовалюты
-    url = f'https://api.huobi.pro/market/trade?symbol={tradePare}' ##текущая цена криптовалюты
-    try:
-        async with aiohttp.ClientSession() as session:
-            async with session.get(url) as response:
-                parsData = await response.json()
-        return parsData
-    except Exception as ex:
-        logger.error(ex)
-
-result = asyncio.run(startParsing('btcrub'))
-# for coin in result:
-#     #print(coin.get('symbol'))
-#     if coin.get('symbol') == 'btcusd':
-#         print(coin)
-print(result)
+## для проверки работы модуля ##
+currencyData = asyncio.run(startParsing('huobi', 'btc', 'rub'))
+print(currencyData)
