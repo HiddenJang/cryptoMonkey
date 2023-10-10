@@ -5,6 +5,7 @@ from huobi.client.account import AccountClient
 from huobi.constant import *
 from huobi.client.trade import TradeClient
 from huobi.utils import *
+from TelegramBot import TelegramBot
 
 def init_logger(name):
     logger = logging.getLogger(name)
@@ -22,6 +23,8 @@ def init_logger(name):
 
 init_logger('CryptoMonkey')
 logger = logging.getLogger('CryptoMonkey.CryptoCoinBroker')
+
+TelegramBot.sendText('Проверка криптобота. Криптобот на связи!')
 
 class cryptoBroker():
     """Класс взаимодействия с критобиржей"""
@@ -54,7 +57,7 @@ class cryptoBroker():
                 print(f'###  Данные переменной currencyData метода getCurrenciesInfo  ###\n{currencyData}\n')
 
                 ### Запуск метода startTrade для проверки размещения ордеров (удалить после отработки) ###
-                self.startTrade(50550084, currencyData, 'buyLimit', amount=22.0, price=0.46)
+                #self.startTrade(50550084, currencyData, 'buyLimit', amount=22.0, price=0.46)
 
                 return currencyData
             except Exception as ex:

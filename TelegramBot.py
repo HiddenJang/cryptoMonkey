@@ -1,0 +1,61 @@
+import requests
+import logging
+
+logger = logging.getLogger('CryptoMonkey.TelegramBot')
+
+class TelegramBot():
+    """Класс включения и взаимодействия с телеграмм-ботом"""
+    messageSwitch = True
+
+    @staticmethod
+    def sendText(text: str):
+        """Отправка текста"""
+        if TelegramBot.messageSwitch:
+            try:
+                token = "5619069193:AAGNIzLkQUo7mX4aglRXRnvc904C_4jbqCM" #токен бота
+                chat_id = "@CryptoMonkey_python_project" #айди или ссылка-приглашение группы в телеграм
+                url_req = "https://api.telegram.org/bot" + token + "/sendMessage" + "?chat_id=" + chat_id + "&text=" "Докладываю Вам господа:\n" + text
+                requests.get(url_req)
+            except Exception as ex:
+                logger.info(f'Ошибка отправки текстового сообщения в телеграмм, {ex}')
+            return
+
+    @staticmethod
+    def sendPhoto(pngPath: str):
+        """Отправка скриншотов"""
+        if TelegramBot.messageSwitch:
+            try:
+                token = "5619069193:AAGNIzLkQUo7mX4aglRXRnvc904C_4jbqCM"  # токен бота
+                chat_id = "@Python_test_g"  # айди или ссылка-приглашение группы в телеграм
+                request_url = "https://api.telegram.org/bot" + token + "/sendMediaGroup"
+                params = {"chat_id": chat_id, "media":"""[{"type": "photo", "media": "attach://random-name-1"}]"""}
+                files = {"random-name-1": open(f"{pngPath}", "rb")} # ссылка на локальный файл
+                requests.post(request_url, params=params, files=files)
+            except Exception as ex:
+                logger.info(f'Ошибка отправки скриншота в телеграмм, {ex}')
+            return
+
+    @staticmethod
+    def sendXlsx(xlsxPath: str):
+        """Отправка Excel-файлов"""
+        if TelegramBot.messageSwitch:
+            try:
+                token = "5619069193:AAGNIzLkQUo7mX4aglRXRnvc904C_4jbqCM"  # токен бота
+                chat_id = "@Python_test_g"  # айди или ссылка-приглашение группы в телеграм
+                request_url = "https://api.telegram.org/bot" + token + "/sendMediaGroup"
+                params = {"chat_id": chat_id, "media":"""[{"type": "document", "media": "attach://random-name-1"}]"""}
+                files = {"random-name-1": open(f"{xlsxPath}", "rb")} # ссылка на локальный файл
+                requests.post(request_url, params=params, files=files)
+            except Exception as ex:
+                logger.info(f'Ошибка отправки статистики (xlsx) в телеграмм, {ex}')
+
+    @staticmethod
+    def botState(var: bool):
+        """Установка разрешения на отправку сообщений"""
+        TelegramBot.messageSwitch = var
+        if var:
+            logger.info('Включена отправка сообщений в телеграм')
+            TelegramBot.sendText('Бот активирован!Йииихаа!Поехали!')
+        else:
+            logger.info('Выключена отправка сообщений в телеграм')
+            TelegramBot.sendText('Бот деактивирован!')
