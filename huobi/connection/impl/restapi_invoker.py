@@ -60,7 +60,7 @@ def call_sync(request, is_checked=False):
 
     elif request.method == "POST":
         response = session.post(request.host + request.url, data=json.dumps(request.post_body), headers=request.header)
-        dict_data = json.loads(response.text, encoding="utf-8")
+        dict_data = json.loads(response.text)
         # print("call_sync  === recv data : ", dict_data)
         check_response(dict_data)
         return request.json_parser(dict_data)

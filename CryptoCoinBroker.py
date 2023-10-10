@@ -26,7 +26,11 @@ logger = logging.getLogger('CryptoMonkey.CryptoCoinBroker')
 class cryptoBroker():
     """Класс взаимодействия с критобиржей"""
 
-    def __init__(self, exchange: str, userToken: tuple):
+    def __init__(
+            self,
+            exchange: str,
+            userToken: tuple
+    ):
         self.exchange = exchange
         self.userToken = userToken
 
@@ -44,11 +48,14 @@ class cryptoBroker():
                 async with aiohttp.ClientSession() as session:
                     async with session.get(url) as response:
                         currencyCommonData = await response.json()
-                #print(currencyCommonData)
                 currencyData["exchange"] = f'{self.exchange}'
                 currencyData["pare"] = f'{baseCurrency}/{quoteCurrency}'
                 currencyData["price"] = currencyCommonData["tick"]["data"][0]["price"]
                 print(f'###  Данные переменной currencyData метода getCurrenciesInfo  ###\n{currencyData}\n')
+
+                ### Запуск метода startTrade для проверки размещения ордеров (удалить после отработки) ###
+                self.startTrade(50550084, currencyData, 'buyLimit', amount=22.0, price=0.46)
+
                 return currencyData
             except Exception as ex:
                 logger.error(ex)
@@ -73,9 +80,9 @@ class cryptoBroker():
 
                 ### Получаем все ненулевые балансы в аккаунте пользователя ###
                 allCoinsBalance = account_client.get_balance(accountId)
-                userBalances = []
+                userBalances = [accountId]
                 for coinBalance in allCoinsBalance:
-                    if float(coinBalance["balance"]) > 0:
+                    if float(coinBalance.get("balance")) > 0:
                         userBalances.append({
                             'currency': coinBalance['currency'],
                             'type': coinBalance['type'],
@@ -89,32 +96,42 @@ class cryptoBroker():
             except Exception as ex:
                 logger.error(ex)
 
-    async def startTrade(self, currencyData: dict, orderType: str) -> None:
+    def startTrade(
+            self,
+            accountId: int,
+            currencyData: dict,
+            orderType: str,
+            amount: float,
+            price: float  # None если выставляется ордер по рыночной цене (buyMarket или sellMarket)
+    ) -> None:
         """Метод размещения ордера на покупку/продажу"""
 
-        symbol = currencyData["pare"].remove("/", "")
+        symbol = currencyData["pare"].replace("/", "")
 
-        account_id = g_account_id
+        ## Выставление ордера по лимитной цене покупаемой валюты ##
+        if orderType == 'buyLimit':
+            type = "Покупка_лимитная"
+            orderType = OrderType.BUY_LIMIT
+        elif orderType == 'sellLimit':
+            type = "Продажа_лимитная"
+            orderType = OrderType.SELL_LIMIT
 
-        trade_client = TradeClient(api_key=g_api_key, secret_key=g_secret_key)
-        order_id = trade_client.create_order(symbol=symbol, account_id=account_id, order_type=OrderType.BUY_LIMIT,
-                                             source=OrderSource.API, amount=4.0, price=1.292)
-        LogInfo.output("created order id : {id}".format(id=order_id))
+        ## Выставление ордера по рыночной цене покупаемой валюты ##
+        elif orderType == 'buyMarket':
+            type = "Покупка_рыночная"
+            orderType = OrderType.BUY_MARKET
+        elif orderType == 'sellMarket':
+            type = "Продажа_рыночная"
+            orderType = OrderType.SELL_MARKET
 
-        canceled_order_id = trade_client.cancel_order(symbol, order_id)
-        if canceled_order_id == order_id:
-            LogInfo.output("cancel order {id} done".format(id=canceled_order_id))
-        else:
-            LogInfo.output("cancel order {id} fail".format(id=canceled_order_id))
+        try:
+            trade_client = TradeClient(api_key=self.userToken[0], secret_key=self.userToken[1])
+            order_id = trade_client.create_order(symbol=symbol, account_id=accountId, order_type=orderType,
+                                                 source=OrderSource.API, amount=amount, price=price)
+        except Exception as ex:
+            print(ex)
+        logger.info(f"Размещен ордер id : {order_id}, {type}, пара: {currencyData['pare']}")
 
-        order_id = trade_client.create_order(symbol=symbol, account_id=account_id, order_type=OrderType.BUY_MARKET,
-                                             source=OrderSource.API, amount=5.0, price=1.292)
-        LogInfo.output("created order id : {id}".format(id=order_id))
-
-        order_id = trade_client.create_order(symbol=symbol, account_id=account_id,
-                                             order_type=OrderType.SELL_MARKET, source=OrderSource.API, amount=1.77,
-                                             price=None)
-        LogInfo.output("created order id : {id}".format(id=order_id))
 
 ## Код для автономной отработки модуля (удалить после отработки) ##
 import os
@@ -127,7 +144,10 @@ async def main(coin1, coin2):
     huobiBroker = cryptoBroker('huobi', (keys[0], keys[1]))
     task1 = asyncio.create_task(huobiBroker.getCurrenciesInfo(coin1, coin2))
     task2 = asyncio.create_task(huobiBroker.getBalance())
-    await asyncio.gather(task1, task2)
+    result = await asyncio.gather(task1, task2)
 
-asyncio.run(main('btc', 'rub'))
+
+
+
+asyncio.run(main('xrp', 'usdt'))
 
