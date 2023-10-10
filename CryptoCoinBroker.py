@@ -48,7 +48,7 @@ class cryptoBroker():
                 currencyData["exchange"] = f'{self.exchange}'
                 currencyData["pare"] = f'{baseCurrency}/{quoteCurrency}'
                 currencyData["price"] = currencyCommonData["tick"]["data"][0]["price"]
-                #print(currencyData)
+                print(f'###  Данные переменной currencyData метода getCurrenciesInfo  ###\n{currencyData}\n')
                 return currencyData
             except Exception as ex:
                 logger.error(ex)
@@ -84,7 +84,7 @@ class cryptoBroker():
                         })
                 if not userBalances:
                     logger.info("Все спотовые балансы аккаунта пользователя равны нулю")
-                print(userBalances)
+                print(f'###  Данные переменной userBalances метода getBalance  ###\n{userBalances}\n')
                 return userBalances
             except Exception as ex:
                 logger.error(ex)
