@@ -21,8 +21,8 @@ class TelegramBot():
             return
 
     @staticmethod
-    def sendPhoto(pngPath: str):
-        """Отправка скриншотов"""
+    def sendImg(pngPath: str):
+        """Отправка изображений"""
         if TelegramBot.messageSwitch:
             try:
                 token = "5619069193:AAGNIzLkQUo7mX4aglRXRnvc904C_4jbqCM"  # токен бота
@@ -32,22 +32,22 @@ class TelegramBot():
                 files = {"random-name-1": open(f"{pngPath}", "rb")} # ссылка на локальный файл
                 requests.post(request_url, params=params, files=files)
             except Exception as ex:
-                logger.info(f'Ошибка отправки скриншота в телеграмм, {ex}')
+                logger.info(f'Ошибка отправки изображения в телеграмм, {ex}')
             return
 
     @staticmethod
-    def sendXlsx(xlsxPath: str):
-        """Отправка Excel-файлов"""
+    def sendFile(filePath: str):
+        """Отправка файлов"""
         if TelegramBot.messageSwitch:
             try:
                 token = "5619069193:AAGNIzLkQUo7mX4aglRXRnvc904C_4jbqCM"  # токен бота
                 chat_id = "@Python_test_g"  # айди или ссылка-приглашение группы в телеграм
                 request_url = "https://api.telegram.org/bot" + token + "/sendMediaGroup"
                 params = {"chat_id": chat_id, "media":"""[{"type": "document", "media": "attach://random-name-1"}]"""}
-                files = {"random-name-1": open(f"{xlsxPath}", "rb")} # ссылка на локальный файл
+                files = {"random-name-1": open(f"{filePath}", "rb")} # ссылка на локальный файл
                 requests.post(request_url, params=params, files=files)
             except Exception as ex:
-                logger.info(f'Ошибка отправки статистики (xlsx) в телеграмм, {ex}')
+                logger.info(f'Ошибка отправки файла в телеграмм, {ex}')
 
     @staticmethod
     def botState(var: bool):
@@ -55,7 +55,7 @@ class TelegramBot():
         TelegramBot.messageSwitch = var
         if var:
             logger.info('Включена отправка сообщений в телеграм')
-            TelegramBot.sendText('Бот активирован!Йииихаа!Поехали!')
+            TelegramBot.sendText('Бот активирован!Поехали!')
         else:
             logger.info('Выключена отправка сообщений в телеграм')
             TelegramBot.sendText('Бот деактивирован!')
