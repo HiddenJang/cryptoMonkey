@@ -180,6 +180,7 @@ class cryptoBroker():
             logger.error(ex)
             TelegramBot.sendText(str(ex))
 
+
 ## Код для автономной отработки модуля (удалить после отработки) ##
 import os
 logsPath = 'D:\\Pasha\\python\\projects\\cryptoMonkey\\Logs.txt'  # путь к файлу с логами
@@ -190,14 +191,17 @@ if os.path.exists(keysPath):
 
 async def main(coin1, coin2):
     huobiBroker = cryptoBroker('huobi', (keys[0], keys[1]))
+
+    ## Запуск методов getCurrenciesInfo, getBalance для получения данных по валютам и ненулевых балансов пользователя ###
     task1 = asyncio.create_task(huobiBroker.getCurrenciesInfo(coin1, coin2))
     task2 = asyncio.create_task(huobiBroker.getBalance())
     result = await asyncio.gather(task1, task2)
-    print(result)
+
     ### Запуск метода startTrade для проверки размещения ордеров (удалить после отработки) ###
     orderId = huobiBroker.startTrade(result[0], 'buyLimit', amount=23.0, price=0.45)
 
     sleep(10)
+
     ### Запуск метода cancelOrder для проверки отмены ордеров (удалить после отработки) ###
     huobiBroker.cancelOrder(result[0], orderId)
     TelegramBot.sendFile(logsPath)
