@@ -15,6 +15,7 @@ class TelegramBot():
                 token = "5619069193:AAGNIzLkQUo7mX4aglRXRnvc904C_4jbqCM" #токен бота
                 chat_id = "@CryptoMonkey_python_project" #айди или ссылка-приглашение группы в телеграм
                 url_req = "https://api.telegram.org/bot" + token + "/sendMessage" + "?chat_id=" + chat_id + "&text=" "Докладываю Вам господа:\n" + text
+                print(url_req)
                 requests.get(url_req)
             except Exception as ex:
                 logger.info(f'Ошибка отправки текстового сообщения в телеграмм, {ex}')
@@ -26,7 +27,7 @@ class TelegramBot():
         if TelegramBot.messageSwitch:
             try:
                 token = "5619069193:AAGNIzLkQUo7mX4aglRXRnvc904C_4jbqCM"  # токен бота
-                chat_id = "@Python_test_g"  # айди или ссылка-приглашение группы в телеграм
+                chat_id = "@CryptoMonkey_python_project"  # айди или ссылка-приглашение группы в телеграм
                 request_url = "https://api.telegram.org/bot" + token + "/sendMediaGroup"
                 params = {"chat_id": chat_id, "media":"""[{"type": "photo", "media": "attach://random-name-1"}]"""}
                 files = {"random-name-1": open(f"{pngPath}", "rb")} # ссылка на локальный файл
@@ -41,7 +42,7 @@ class TelegramBot():
         if TelegramBot.messageSwitch:
             try:
                 token = "5619069193:AAGNIzLkQUo7mX4aglRXRnvc904C_4jbqCM"  # токен бота
-                chat_id = "@Python_test_g"  # айди или ссылка-приглашение группы в телеграм
+                chat_id = "@CryptoMonkey_python_project"  # айди или ссылка-приглашение группы в телеграм
                 request_url = "https://api.telegram.org/bot" + token + "/sendMediaGroup"
                 params = {"chat_id": chat_id, "media":"""[{"type": "document", "media": "attach://random-name-1"}]"""}
                 files = {"random-name-1": open(f"{filePath}", "rb")} # ссылка на локальный файл
