@@ -14,8 +14,7 @@ class TelegramBot():
             try:
                 token = "5619069193:AAGNIzLkQUo7mX4aglRXRnvc904C_4jbqCM" #токен бота
                 chat_id = "@CryptoMonkey_python_project" #айди или ссылка-приглашение группы в телеграм
-                url_req = "https://api.telegram.org/bot" + token + "/sendMessage" + "?chat_id=" + chat_id + "&text=" "Докладываю Вам господа:\n" + text
-                print(url_req)
+                url_req = "https://api.telegram.org/bot" + token + "/sendMessage" + "?chat_id=" + chat_id + "&text=" "Докладываю:\n" + text
                 requests.get(url_req)
             except Exception as ex:
                 logger.info(f'Ошибка отправки текстового сообщения в телеграмм, {ex}')
