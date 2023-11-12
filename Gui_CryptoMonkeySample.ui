@@ -1,0 +1,2295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CryptoMonkey</class>
+ <widget class="QMainWindow" name="CryptoMonkey">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1209</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1209</width>
+    <height>570</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1209</width>
+    <height>570</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>CryptoMonkey</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>img/Logo.jpg</normaloff>img/Logo.jpg</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QTreeWidget" name="treeWidget_siteList">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>5</y>
+      <width>120</width>
+      <height>540</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>9</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.983, y2:0.227273, stop:0 rgba(245, 131, 86, 255), stop:1 rgba(255, 255, 255, 255));
+</string>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>false</bool>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="textElideMode">
+     <enum>Qt::ElideMiddle</enum>
+    </property>
+    <property name="autoExpandDelay">
+     <number>-1</number>
+    </property>
+    <property name="indentation">
+     <number>4</number>
+    </property>
+    <property name="rootIsDecorated">
+     <bool>true</bool>
+    </property>
+    <property name="uniformRowHeights">
+     <bool>false</bool>
+    </property>
+    <property name="itemsExpandable">
+     <bool>true</bool>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="animated">
+     <bool>false</bool>
+    </property>
+    <property name="allColumnsShowFocus">
+     <bool>false</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+    <property name="headerHidden">
+     <bool>false</bool>
+    </property>
+    <property name="expandsOnDoubleClick">
+     <bool>true</bool>
+    </property>
+    <property name="columnCount">
+     <number>1</number>
+    </property>
+    <attribute name="headerVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="headerCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="headerHighlightSections">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="headerMinimumSectionSize">
+     <number>10</number>
+    </attribute>
+    <attribute name="headerStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>Выбор площадок</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>227</red>
+       <green>91</green>
+       <blue>0</blue>
+      </color>
+     </property>
+    </column>
+    <item>
+     <property name="text">
+      <string>Myfin</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <underline>true</underline>
+      </font>
+     </property>
+     <property name="checkState">
+      <enum>Unchecked</enum>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>img/Myfin.bmp</normaloff>img/Myfin.bmp</iconset>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Kucoin</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <underline>true</underline>
+      </font>
+     </property>
+     <property name="checkState">
+      <enum>Unchecked</enum>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>img/Kucoin.bmp</normaloff>img/Kucoin.bmp</iconset>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Coinbase</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>true</underline>
+       <strikeout>false</strikeout>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+     <property name="checkState">
+      <enum>Unchecked</enum>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>img/Coinbase.bmp</normaloff>img/Coinbase.bmp</iconset>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Huobi</string>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+       <underline>true</underline>
+      </font>
+     </property>
+     <property name="checkState">
+      <enum>Checked</enum>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>img/Huobi.jpg</normaloff>img/Huobi.jpg</iconset>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_header">
+    <property name="geometry">
+     <rect>
+      <x>131</x>
+      <y>5</y>
+      <width>1070</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.983, y2:0.227273, stop:0 rgba(227, 91, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_mainResultWindow">
+    <property name="geometry">
+     <rect>
+      <x>131</x>
+      <y>47</y>
+      <width>687</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectItems</enum>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::SolidLine</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="cornerButtonEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="rowCount">
+     <number>7</number>
+    </property>
+    <property name="columnCount">
+     <number>3</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>228</number>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>39</number>
+    </attribute>
+    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>27</number>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>20</number>
+    </attribute>
+    <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column>
+     <property name="text">
+      <string>Торговая площадка</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>207</red>
+       <green>207</green>
+       <blue>205</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Валютная пара</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Котировка</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="background">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>181</red>
+        <green>181</green>
+        <blue>181</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_diagWindow">
+    <property name="geometry">
+     <rect>
+      <x>131</x>
+      <y>452</y>
+      <width>687</width>
+      <height>93</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+      <horstretch>18</horstretch>
+      <verstretch>10</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="rowCount">
+     <number>1</number>
+    </property>
+    <property name="columnCount">
+     <number>1</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>689</number>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>20</number>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>0</number>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>20</number>
+    </attribute>
+    <attribute name="verticalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Системные сообщения и дополнительная информация</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignTop</set>
+     </property>
+    </item>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>823</x>
+      <y>30</y>
+      <width>378</width>
+      <height>515</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <widget class="QLabel" name="label_coinChoice">
+     <property name="geometry">
+      <rect>
+       <x>131</x>
+       <y>59</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Выбор валют&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_refreshTime">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>19</y>
+       <width>191</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Время обновления данных парсеров&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox_refreshTime">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>39</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_tgBotOn">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>211</x>
+       <y>21</y>
+       <width>161</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Включение телеграмм-бота</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_EnableRefreshTime">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>39</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Установить</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_setPanel">
+     <property name="geometry">
+      <rect>
+       <x>113</x>
+       <y>1</y>
+       <width>171</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Панель настроек&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_quotationCoin">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>113</y>
+       <width>100</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>XRP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BTC</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ETH</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>USDT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BNB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>USD Coin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cardano</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dogecoin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Solana</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>TRON</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ton</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dai</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Polkadot</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Polygon</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Litecoin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SHIBA INU</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Wrapped Bitcoin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Bitcoin Cash</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>UNUS SED LEO</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Avalanche</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>TrueUSD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Chainlink</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stellar Lumens</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Binance USD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Monero</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uniswap</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Aave UNI V2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>OKB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cosmos</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ethereum Classic</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Binance Chain Native Token</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Crypto.com Coin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Hedera Hashgraph</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>THETA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Wrapped Bitcoin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>IOTA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Bitcoin Cash</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stellar</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Acala</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>XDC Mainnet</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>KuCoin Token</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>EOS</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ZCash</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NEO</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DigitalCash</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Verge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>OmiseGo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NEM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DigiByte</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Bitshares</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="comboBox_basicCoin">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>121</x>
+       <y>113</y>
+       <width>100</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhNone</set>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <property name="currentText">
+      <string>RUB</string>
+     </property>
+     <property name="insertPolicy">
+      <enum>QComboBox::InsertAlphabetically</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>RUB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>USDT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>USD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>EUR</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>GBP</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="Line" name="line_settingPanel">
+     <property name="geometry">
+      <rect>
+       <x>37</x>
+       <y>242</y>
+       <width>311</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_enableCoinChoice">
+     <property name="geometry">
+      <rect>
+       <x>63</x>
+       <y>143</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(126, 255, 112);</string>
+     </property>
+     <property name="text">
+      <string>Применить</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_quotationCoin">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>90</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Котируемая валюта</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_basicCoin">
+     <property name="geometry">
+      <rect>
+       <x>129</x>
+       <y>90</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Базовая валюта</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_circularRefresh">
+     <property name="geometry">
+      <rect>
+       <x>211</x>
+       <y>42</y>
+       <width>150</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Циклическое обновление</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_allCoinsRender">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>176</y>
+       <width>160</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Отображать все котировки</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_coinSearchBox">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>78</y>
+       <width>145</width>
+       <height>163</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_addNewCoin">
+     <property name="geometry">
+      <rect>
+       <x>246</x>
+       <y>176</y>
+       <width>100</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(126, 255, 112);</string>
+     </property>
+     <property name="text">
+      <string>Добавить валюту</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_coinSearch">
+     <property name="geometry">
+      <rect>
+       <x>241</x>
+       <y>80</y>
+       <width>110</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="baseSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Поиск по названию&lt;br/&gt;котируемой валюты&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+     <property name="indent">
+      <number>-1</number>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::NoTextInteraction</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_coinSearch">
+     <property name="geometry">
+      <rect>
+       <x>233</x>
+       <y>113</y>
+       <width>130</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_coinSearch">
+     <property name="geometry">
+      <rect>
+       <x>259</x>
+       <y>142</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(126, 255, 112);</string>
+     </property>
+     <property name="text">
+      <string>Поиск</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_deleteCoin">
+     <property name="geometry">
+      <rect>
+       <x>246</x>
+       <y>210</y>
+       <width>100</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 40, 25);</string>
+     </property>
+     <property name="text">
+      <string>Удалить валюту</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_tradeSettings">
+     <property name="geometry">
+      <rect>
+       <x>91</x>
+       <y>251</y>
+       <width>230</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Настройки автоматической торговли&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_exchangeType">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>298</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Криптобиржа</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_exchangeType">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>318</y>
+       <width>100</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Huobi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Myfin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Kucoin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Coinbase</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_dealType">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>341</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Вид сделки</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_dealType">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>361</y>
+       <width>100</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Покупка</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Продажа</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_orderType">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>383</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Тип ордера</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_orderType">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>403</y>
+       <width>100</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Лимитный</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Рыночный</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_buyAmount">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>429</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Кол-во валюты&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="spinBox_buyAmount">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>449</y>
+       <width>42</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_currencyPrice">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>429</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Цена валюты&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QDoubleSpinBox" name="doubleSpinBox_currencyPrice">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>449</y>
+       <width>62</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_apiKeysLoad">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>272</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(126, 255, 112);</string>
+     </property>
+     <property name="text">
+      <string>Ввести ключи API</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_cancelOrder">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>448</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 40, 25);</string>
+     </property>
+     <property name="text">
+      <string>Отменить ордер</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_placeOrder">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>415</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(126, 255, 112);</string>
+     </property>
+     <property name="text">
+      <string>Разместить ордер</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_getBalances">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>381</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(126, 255, 112);</string>
+     </property>
+     <property name="text">
+      <string>Запросить баланс</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_tradeQuotCoin">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>361</y>
+       <width>100</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>XRP</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BTC</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ETH</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>USDT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BNB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>USD Coin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cardano</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dogecoin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Solana</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>TRON</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ton</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dai</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Polkadot</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Polygon</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Litecoin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SHIBA INU</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Wrapped Bitcoin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Bitcoin Cash</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>UNUS SED LEO</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Avalanche</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>TrueUSD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Chainlink</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stellar Lumens</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Binance USD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Monero</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uniswap</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Aave UNI V2</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>OKB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Cosmos</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Ethereum Classic</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Binance Chain Native Token</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Crypto.com Coin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Hedera Hashgraph</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>THETA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Wrapped Bitcoin</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>IOTA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Bitcoin Cash</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Stellar</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Acala</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>XDC Mainnet</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>KuCoin Token</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>EOS</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ZCash</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NEO</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DigitalCash</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Verge</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>OmiseGo</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NEM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>DigiByte</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Bitshares</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_tradeQuotCoin">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>340</y>
+       <width>111</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Котируемая валюта</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox_tradeBaseCoin">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>403</y>
+       <width>100</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhNone</set>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <property name="currentText">
+      <string>USDT</string>
+     </property>
+     <property name="insertPolicy">
+      <enum>QComboBox::InsertAlphabetically</enum>
+     </property>
+     <item>
+      <property name="text">
+       <string>USDT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>RUB</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>USD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>EUR</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>GBP</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_tradeBaseCoin">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>121</x>
+       <y>382</y>
+       <width>110</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Базовая валюта</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_getOpenOrdersInfo">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>482</y>
+       <width>151</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(126, 255, 112);</string>
+     </property>
+     <property name="text">
+      <string>Загрузить историю ордеров</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_enableImitatitonTrade">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>280</y>
+       <width>180</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Включить имитацию торговли</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_tradeImitationBox">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>274</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_cryptoBotStart">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>310</y>
+       <width>190</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(126, 255, 112);</string>
+     </property>
+     <property name="text">
+      <string>Настроить и запустить трейд-бота</string>
+     </property>
+    </widget>
+    <zorder>textBrowser_tradeImitationBox</zorder>
+    <zorder>label_coinChoice</zorder>
+    <zorder>label_refreshTime</zorder>
+    <zorder>spinBox_refreshTime</zorder>
+    <zorder>checkBox_tgBotOn</zorder>
+    <zorder>pushButton_EnableRefreshTime</zorder>
+    <zorder>label_setPanel</zorder>
+    <zorder>comboBox_quotationCoin</zorder>
+    <zorder>comboBox_basicCoin</zorder>
+    <zorder>line_settingPanel</zorder>
+    <zorder>pushButton_enableCoinChoice</zorder>
+    <zorder>label_quotationCoin</zorder>
+    <zorder>label_basicCoin</zorder>
+    <zorder>checkBox_circularRefresh</zorder>
+    <zorder>checkBox_allCoinsRender</zorder>
+    <zorder>textBrowser_coinSearchBox</zorder>
+    <zorder>pushButton_addNewCoin</zorder>
+    <zorder>label_coinSearch</zorder>
+    <zorder>lineEdit_coinSearch</zorder>
+    <zorder>pushButton_coinSearch</zorder>
+    <zorder>pushButton_deleteCoin</zorder>
+    <zorder>label_tradeSettings</zorder>
+    <zorder>label_exchangeType</zorder>
+    <zorder>comboBox_exchangeType</zorder>
+    <zorder>label_dealType</zorder>
+    <zorder>comboBox_dealType</zorder>
+    <zorder>label_orderType</zorder>
+    <zorder>comboBox_orderType</zorder>
+    <zorder>label_buyAmount</zorder>
+    <zorder>spinBox_buyAmount</zorder>
+    <zorder>label_currencyPrice</zorder>
+    <zorder>doubleSpinBox_currencyPrice</zorder>
+    <zorder>pushButton_apiKeysLoad</zorder>
+    <zorder>pushButton_cancelOrder</zorder>
+    <zorder>pushButton_placeOrder</zorder>
+    <zorder>pushButton_getBalances</zorder>
+    <zorder>comboBox_tradeQuotCoin</zorder>
+    <zorder>label_tradeQuotCoin</zorder>
+    <zorder>comboBox_tradeBaseCoin</zorder>
+    <zorder>label_tradeBaseCoin</zorder>
+    <zorder>pushButton_getOpenOrdersInfo</zorder>
+    <zorder>checkBox_enableImitatitonTrade</zorder>
+    <zorder>pushButton_cryptoBotStart</zorder>
+   </widget>
+   <widget class="QPushButton" name="pushButton_loadSiteData">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>126</y>
+      <width>110</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(126, 255, 112);</string>
+    </property>
+    <property name="text">
+     <string>Загрузить данные</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_activeOrdersWindow">
+    <property name="geometry">
+     <rect>
+      <x>131</x>
+      <y>290</y>
+      <width>687</width>
+      <height>156</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::ExtendedSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectItems</enum>
+    </property>
+    <property name="showGrid">
+     <bool>true</bool>
+    </property>
+    <property name="gridStyle">
+     <enum>Qt::SolidLine</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+    <property name="cornerButtonEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="rowCount">
+     <number>5</number>
+    </property>
+    <property name="columnCount">
+     <number>6</number>
+    </property>
+    <attribute name="horizontalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>111</number>
+    </attribute>
+    <attribute name="horizontalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>32</number>
+    </attribute>
+    <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderCascadingSectionResizes">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>17</number>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderMinimumSectionSize">
+     <number>15</number>
+    </attribute>
+    <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column>
+     <property name="text">
+      <string>Тип ордера/
+ID ордера</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+       <strikeout>false</strikeout>
+       <stylestrategy>PreferDefault</stylestrategy>
+       <kerning>true</kerning>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Валютная пара</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Количество</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Цена</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Криптобиржа</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+       <kerning>false</kerning>
+      </font>
+     </property>
+     <property name="background">
+      <color>
+       <red>207</red>
+       <green>207</green>
+       <blue>205</blue>
+      </color>
+     </property>
+     <property name="foreground">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Статус ордера</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="background">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>14</red>
+        <green>255</green>
+        <blue>22</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="background">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>181</red>
+        <green>181</green>
+        <blue>181</blue>
+       </color>
+      </brush>
+     </property>
+    </item>
+    <item row="0" column="4">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+    <item row="0" column="5">
+     <property name="text">
+      <string/>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_currenciesInformWindow">
+    <property name="geometry">
+     <rect>
+      <x>389</x>
+      <y>26</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Информация по котировкам&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_activeOrdersInfo">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>269</y>
+      <width>211</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Выставленные ордеры&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1209</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menu_file">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_help">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_settings">
+    <property name="title">
+     <string>Настройки</string>
+    </property>
+    <addaction name="action_mirrorsInput"/>
+    <addaction name="action_additionalSettings"/>
+   </widget>
+   <addaction name="menu_file"/>
+   <addaction name="menu_settings"/>
+   <addaction name="menu_help"/>
+  </widget>
+  <action name="action_mirrorsInput">
+   <property name="text">
+    <string>Ввод актульных зеркал сайтов</string>
+   </property>
+  </action>
+  <action name="action_additionalSettings">
+   <property name="text">
+    <string>Дополнительные настройки</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="img/CryptoImg.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="Crypto">
+    <file>Coinbase.bmp</file>
+    <file>Huobi.jpg</file>
+    <file>Kucoin.bmp</file>
+    <file>Logo.jpg</file>
+    <file>Myfin.bmp</file>
+  </qresource>
+</RCC>

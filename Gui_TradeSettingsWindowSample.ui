@@ -1,0 +1,1786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TradeSettingsWindow</class>
+ <widget class="QDialog" name="TradeSettingsWindow">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>852</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>315</width>
+    <height>357</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::ActionsContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Настройки крипто-бота</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>img/Logo.jpg</normaloff>img/Logo.jpg</iconset>
+  </property>
+  <property name="whatsThis">
+   <string notr="true"/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.983, y2:0.227273, stop:0 rgba(227, 91, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <widget class="QComboBox" name="comboBox_exchangeType">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>28</y>
+     <width>100</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Huobi</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Myfin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Kucoin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Coinbase</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_exchangeType">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>5</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>Криптобиржа</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_tradeBaseCoin">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>231</x>
+     <y>5</y>
+     <width>110</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>Базовая валюта</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_tradeQuotCoin">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>6</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>Котируемая валюта</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_tradeBaseCoin">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>26</y>
+     <width>100</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+   <property name="editable">
+    <bool>false</bool>
+   </property>
+   <property name="currentText">
+    <string>USDT</string>
+   </property>
+   <property name="insertPolicy">
+    <enum>QComboBox::InsertAlphabetically</enum>
+   </property>
+   <item>
+    <property name="text">
+     <string>USDT</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>RUB</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>USD</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>EUR</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>GBP</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QComboBox" name="comboBox_tradeQuotCoin">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>27</y>
+     <width>100</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>XRP</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>BTC</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ETH</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>USDT</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>BNB</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>USD Coin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cardano</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dogecoin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Solana</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>TRON</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ton</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dai</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Polkadot</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Polygon</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Litecoin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>SHIBA INU</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Wrapped Bitcoin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bitcoin Cash</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>UNUS SED LEO</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Avalanche</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>TrueUSD</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Chainlink</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Stellar Lumens</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Binance USD</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Monero</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Uniswap</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Aave UNI V2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>OKB</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cosmos</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Ethereum Classic</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Binance Chain Native Token</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Crypto.com Coin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Hedera Hashgraph</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>THETA</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Wrapped Bitcoin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>IOTA</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bitcoin Cash</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Stellar</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Acala</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>XDC Mainnet</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>KuCoin Token</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>EOS</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>ZCash</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>NEO</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>DigitalCash</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Verge</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>OmiseGo</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>NEM</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>DigiByte</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bitshares</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_percentStartCondition">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>85</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>При падении цены на, %</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_percentStartCondition">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>105</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="value">
+    <double>5.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_purchaseAmount">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>160</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>Закупить на, ед.баз.валюты</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_purchaseAmount">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>170</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>10.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="Line" name="line_startTradeCondition">
+   <property name="geometry">
+    <rect>
+     <x>167</x>
+     <y>91</y>
+     <width>3</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_priceStartCondition">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>184</x>
+     <y>86</y>
+     <width>200</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>При падении цены до, ед.баз.валюты</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_priceStartCondition">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>184</x>
+     <y>106</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_startTradeCondition">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>66</y>
+     <width>120</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Начать торговлю при&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_settingPanel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>52</y>
+     <width>370</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_settingPanel_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>132</y>
+     <width>370</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_settingPanel_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>830</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_sell">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>235</y>
+     <width>321</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;БЛОК1 --------- Продать - Зафиксировать цену&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_upPercent">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>137</x>
+     <y>254</y>
+     <width>230</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>При увеличении цены на, %</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_positiveBranch_upPercent">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>137</x>
+     <y>274</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>10.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_sellPercent">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>137</x>
+     <y>294</y>
+     <width>190</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>Процент купленой валюты</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_positiveBranch_sellPercent">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>137</x>
+     <y>314</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>50.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch">
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>213</y>
+     <width>160</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Положительная ветка&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_startTradeCondition_2">
+   <property name="geometry">
+    <rect>
+     <x>368</x>
+     <y>220</y>
+     <width>3</width>
+     <height>330</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_negativeBranch">
+   <property name="geometry">
+    <rect>
+     <x>451</x>
+     <y>214</y>
+     <width>160</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Отрицательная ветка&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_negativeBranch_averagePercent_1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>316</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>25.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_negativeBranch_averagePercent_1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>296</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>Величина, % от закупочной</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_negativeBranch_downPercent_1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>276</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>5.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_negativeBranch_downPercent_1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>256</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>При падении на, %</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_negativeBranch_averaging1">
+   <property name="geometry">
+    <rect>
+     <x>439</x>
+     <y>235</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;БЛОК4 -- Усредниться 1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line_startTradeCondition_3">
+   <property name="geometry">
+    <rect>
+     <x>839</x>
+     <y>221</y>
+     <width>3</width>
+     <height>330</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_negativeBranch_averagePercent_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>424</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>25.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_negativeBranch_downPercent_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>384</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>5.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_negativeBranch_averaging2">
+   <property name="geometry">
+    <rect>
+     <x>397</x>
+     <y>343</y>
+     <width>260</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;БЛОК5 -- Усредниться 2 или Продать&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_negativeBranch_averagePercent_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>404</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>Величина, % от закупочной</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_negativeBranch_downPercent_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>364</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>При падении на, %</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_upSellPercent_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>404</y>
+     <width>190</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>Процент купленой валюты</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_positiveBranch_upSellPercent_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>424</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>25.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_sell_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>343</y>
+     <width>321</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;БЛОК2 --------- Продать - Зафиксировать цену &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_upPercent_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>364</y>
+     <width>230</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>При увеличении цены на, %</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_positiveBranch_upPercent_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>384</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>10.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_downPercent_3">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>221</x>
+     <y>364</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>При падении цены на, %</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_positiveBranch_downPercent_3">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>221</x>
+     <y>384</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>5.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_positiveBranch_downSellPercent_3">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>221</x>
+     <y>424</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>25.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_downSellPercent_3">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>221</x>
+     <y>404</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>Процент купленой валюты</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_or3">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>394</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;ИЛИ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_sell_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>450</y>
+     <width>321</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;БЛОК3 --------- Продать - Зафиксировать цену &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_upPercent_4">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>471</y>
+     <width>230</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>При увеличении цены на, %</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_positiveBranch_upPercent_4">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>491</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>10.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_positiveBranch_downPercent_4">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>221</x>
+     <y>491</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>5.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_downSellPercent_4">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>221</x>
+     <y>511</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>Процент купленой валюты</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_positiveBranch_downSellPercent_4">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>221</x>
+     <y>531</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>25.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_positiveBranch_upSellPercent_4">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>531</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>25.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_or4">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>501</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;ИЛИ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_upSellPercent_4">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>511</y>
+     <width>190</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>Процент купленой валюты</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_positiveBranch_downPercent_4">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>221</x>
+     <y>471</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>При падении цены на, %</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_negativeBranch_upPercent1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>572</x>
+     <y>364</y>
+     <width>151</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>При увеличении цены на, %</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_negativeBranch_upPercent1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>572</x>
+     <y>384</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>10.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_negativeBranch_upSellPercent1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>572</x>
+     <y>424</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>100.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_negativeBranch_upSellPercent1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>574</x>
+     <y>404</y>
+     <width>190</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>Процент купленой валюты</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_negativeBranch_long1">
+   <property name="geometry">
+    <rect>
+     <x>448</x>
+     <y>454</y>
+     <width>150</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;БЛОК6 -- Долгосрок&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_negativeBranch_long1_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>476</y>
+     <width>100</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>При падении на, %</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_negativeBranch_long1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>496</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>5.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_negativeBranch_sellAllLong1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>517</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>Продать все при увеличении цены на, %</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_negativeBranch_sellAllLong1">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>537</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <double>999.990000000000009</double>
+   </property>
+   <property name="value">
+    <double>15.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_orderType">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>341</x>
+     <y>26</y>
+     <width>100</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Лимитный</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Рыночный</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_orderType">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>343</x>
+     <y>6</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>Тип ордера</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_startTrade">
+   <property name="geometry">
+    <rect>
+     <x>465</x>
+     <y>26</y>
+     <width>100</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(126, 255, 112);</string>
+   </property>
+   <property name="text">
+    <string>Старт</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_negativeBranch_or1">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>400</y>
+     <width>31</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;ИЛИ&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_stopTrade">
+   <property name="geometry">
+    <rect>
+     <x>465</x>
+     <y>60</y>
+     <width>100</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 40, 25);</string>
+   </property>
+   <property name="text">
+    <string>Стоп</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_EnableRefreshTime">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>515</x>
+     <y>122</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Установить</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_refreshTime">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>465</x>
+     <y>102</y>
+     <width>200</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Время обновления текущей стоимости&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_refreshTime">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>465</x>
+     <y>122</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="value">
+    <number>3</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_startBalance">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>589</x>
+     <y>5</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:0,0,0,10</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Стартовый баланс (имитация)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_startBalance">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>25</y>
+     <width>50</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="maximum">
+    <number>9999</number>
+   </property>
+   <property name="value">
+    <number>100</number>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
