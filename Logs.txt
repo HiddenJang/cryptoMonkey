@@ -1,3 +1,515 @@
 2023-10-10 21:58:13,243 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
 2023-10-10 21:58:13,327 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
 2023-10-10 21:58:14,198 -- CryptoMonkey.CryptoCoinBroker -- 90 -- ERROR -- JSONDecoder.__init__() got an unexpected keyword argument 'encoding'
+2023-10-10 22:00:33,177 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 22:00:33,192 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 22:00:33,993 -- CryptoMonkey.CryptoCoinBroker -- 90 -- ERROR -- JSONDecoder.__init__() got an unexpected keyword argument 'encoding'
+2023-10-10 22:02:10,946 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 22:02:10,978 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 22:02:13,183 -- CryptoMonkey.CryptoCoinBroker -- 90 -- ERROR -- 'Account' object has no attribute 'get'
+2023-10-10 22:02:54,991 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 22:02:55,022 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 22:03:20,175 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 22:03:20,191 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 22:04:35,684 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 22:04:35,700 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 22:06:56,112 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 22:06:56,134 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 22:07:16,860 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 22:07:16,876 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 22:07:26,463 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 22:07:26,494 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 22:25:51,834 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 22:25:51,850 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 22:26:12,450 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 22:26:12,471 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 22:26:22,763 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 22:26:22,778 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 22:28:21,162 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 22:28:21,177 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 22:28:27,987 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 22:28:28,009 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 22:32:20,130 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 22:32:20,146 -- CryptoMonkey.CryptoCoinBroker -- 59 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:02:57,797 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:02:57,820 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:03:00,439 -- CryptoMonkey.CryptoCoinBroker -- 61 -- ERROR -- cryptoBroker.startTrade() missing 1 required positional argument: 'orderType'
+2023-10-10 23:24:19,059 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:24:19,074 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:26:18,779 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:26:18,795 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:26:21,121 -- CryptoMonkey.CryptoCoinBroker -- 61 -- ERROR -- 'str' object has no attribute 'remove'
+2023-10-10 23:28:07,457 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:28:07,472 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:28:09,074 -- CryptoMonkey.CryptoCoinBroker -- 61 -- ERROR -- 'str' object has no attribute 'remove'
+2023-10-10 23:29:01,389 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:29:01,420 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:29:02,923 -- CryptoMonkey.CryptoCoinBroker -- 61 -- ERROR -- 'str' object has no attribute 'remove'
+2023-10-10 23:29:23,731 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:29:23,753 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:29:45,938 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:29:45,961 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:29:47,576 -- CryptoMonkey.CryptoCoinBroker -- 61 -- ERROR -- 'str' object has no attribute 'remove'
+2023-10-10 23:30:05,352 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:30:05,383 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:30:06,867 -- CryptoMonkey.CryptoCoinBroker -- 61 -- ERROR -- 'str' object has no attribute 'remove'
+2023-10-10 23:37:40,458 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:37:40,473 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:37:43,093 -- CryptoMonkey.CryptoCoinBroker -- 61 -- ERROR -- 'str' object has no attribute 'remove'
+2023-10-10 23:39:23,856 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:39:23,887 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:39:25,744 -- CryptoMonkey.CryptoCoinBroker -- 61 -- ERROR -- JSONDecoder.__init__() got an unexpected keyword argument 'encoding'
+2023-10-10 23:41:10,574 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:41:10,590 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:41:13,580 -- CryptoMonkey.CryptoCoinBroker -- 61 -- ERROR -- cannot access local variable 'order_id' where it is not associated with a value
+2023-10-10 23:43:55,686 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:43:55,718 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:43:59,277 -- CryptoMonkey.CryptoCoinBroker -- 61 -- ERROR -- cannot access local variable 'order_id' where it is not associated with a value
+2023-10-10 23:46:07,571 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:46:07,618 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:46:09,569 -- CryptoMonkey.CryptoCoinBroker -- 61 -- ERROR -- cannot access local variable 'order_id' where it is not associated with a value
+2023-10-10 23:46:30,867 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:46:30,873 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:46:33,524 -- CryptoMonkey.CryptoCoinBroker -- 61 -- ERROR -- cannot access local variable 'order_id' where it is not associated with a value
+2023-10-10 23:51:53,595 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:51:53,626 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:51:55,598 -- CryptoMonkey.CryptoCoinBroker -- 61 -- ERROR -- cannot access local variable 'order_id' where it is not associated with a value
+2023-10-10 23:52:23,983 -- CryptoMonkey -- 21 -- DEBUG -- logger was initialized
+2023-10-10 23:52:23,999 -- CryptoMonkey.CryptoCoinBroker -- 66 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-10 23:52:26,641 -- CryptoMonkey.CryptoCoinBroker -- 133 -- INFO -- Размещен ордер id : 898735372633733. Покупка_лимитная
+2023-10-11 00:11:29,755 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 00:11:29,823 -- CryptoMonkey.CryptoCoinBroker -- 68 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 00:15:40,524 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 00:15:40,544 -- CryptoMonkey.CryptoCoinBroker -- 68 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 00:16:32,719 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 00:16:32,739 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 00:17:13,386 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 00:17:13,405 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 00:19:34,039 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 00:19:34,061 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 00:19:45,413 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 00:19:45,434 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 00:23:26,541 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 00:23:26,559 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 00:23:48,994 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 00:23:49,010 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 00:24:36,800 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 00:25:57,758 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 00:25:57,773 -- CryptoMonkey.CryptoCoinBroker -- 70 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 00:26:26,698 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 00:26:26,698 -- CryptoMonkey.TelegramBot -- 57 -- INFO -- Включена отправка сообщений в телеграм
+2023-10-11 00:26:27,283 -- CryptoMonkey.CryptoCoinBroker -- 70 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 00:26:57,506 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 00:26:57,506 -- CryptoMonkey.TelegramBot -- 57 -- INFO -- Включена отправка сообщений в телеграм
+2023-10-11 00:26:58,100 -- CryptoMonkey.CryptoCoinBroker -- 70 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 00:29:32,445 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 00:29:32,786 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 11:23:19,509 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 11:23:20,041 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 11:26:07,373 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 11:26:07,389 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 11:29:35,305 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 11:29:35,633 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 11:30:06,520 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 11:30:06,832 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 11:30:48,786 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 11:30:49,161 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 11:31:49,013 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 11:31:49,372 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 11:33:17,315 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 11:33:17,643 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 11:41:06,144 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 11:41:06,581 -- CryptoMonkey.CryptoCoinBroker -- 69 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 11:43:45,779 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 11:43:46,185 -- CryptoMonkey.TelegramBot -- 61 -- INFO -- Выключена отправка сообщений в телеграм
+2023-10-11 11:43:46,232 -- CryptoMonkey.CryptoCoinBroker -- 70 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 18:39:43,229 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 18:39:43,245 -- CryptoMonkey.TelegramBot -- 61 -- INFO -- Выключена отправка сообщений в телеграм
+2023-10-11 18:39:43,292 -- CryptoMonkey.CryptoCoinBroker -- 95 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 18:40:13,795 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 18:40:13,795 -- CryptoMonkey.TelegramBot -- 58 -- INFO -- Включена отправка сообщений в телеграм
+2023-10-11 18:40:16,873 -- CryptoMonkey.CryptoCoinBroker -- 95 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 18:40:26,952 -- CryptoMonkey.CryptoCoinBroker -- 154 -- ERROR -- ('ExecuteError', '[Executing] account-frozen-balance-insufficient-error: trade account balance is not enough, left: `0.421`')
+2023-10-11 18:40:26,952 -- CryptoMonkey.TelegramBot -- 21 -- INFO -- Ошибка отправки текстового сообщения в телеграмм, can only concatenate str (not "HuobiApiException") to str
+2023-10-11 18:40:26,967 -- CryptoMonkey.CryptoCoinBroker -- 89 -- ERROR -- cannot access local variable 'orderId' where it is not associated with a value
+2023-10-11 18:46:22,379 -- CryptoMonkey -- 22 -- DEBUG -- logger was initialized
+2023-10-11 18:46:22,379 -- CryptoMonkey.TelegramBot -- 58 -- INFO -- Включена отправка сообщений в телеграм
+2023-10-11 18:46:24,676 -- CryptoMonkey.CryptoCoinBroker -- 95 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 18:51:24,430 -- CryptoMonkey -- 23 -- DEBUG -- logger was initialized
+2023-10-11 18:51:24,430 -- CryptoMonkey.TelegramBot -- 60 -- INFO -- Выключена отправка сообщений в телеграм
+2023-10-11 18:51:24,446 -- CryptoMonkey.CryptoCoinBroker -- 92 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 18:51:44,540 -- CryptoMonkey -- 23 -- DEBUG -- logger was initialized
+2023-10-11 18:51:44,555 -- CryptoMonkey.TelegramBot -- 60 -- INFO -- Выключена отправка сообщений в телеграм
+2023-10-11 18:51:44,571 -- CryptoMonkey.CryptoCoinBroker -- 92 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 18:54:07,655 -- CryptoMonkey -- 23 -- DEBUG -- logger was initialized
+2023-10-11 18:54:07,655 -- CryptoMonkey.TelegramBot -- 60 -- INFO -- Выключена отправка сообщений в телеграм
+2023-10-11 18:54:07,670 -- CryptoMonkey.CryptoCoinBroker -- 92 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 18:54:22,935 -- CryptoMonkey.CryptoCoinBroker -- 170 -- INFO -- Отмена ордера id : 898744977526393, пара: xrp/usdt проведена успешно!
+2023-10-11 18:55:04,414 -- CryptoMonkey -- 23 -- DEBUG -- logger was initialized
+2023-10-11 18:55:04,414 -- CryptoMonkey.TelegramBot -- 57 -- INFO -- Включена отправка сообщений в телеграм
+2023-10-11 18:55:07,758 -- CryptoMonkey.CryptoCoinBroker -- 92 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 18:55:24,810 -- CryptoMonkey.CryptoCoinBroker -- 170 -- INFO -- Отмена ордера id : 898745003116072, пара: xrp/usdt проведена успешно!
+2023-10-11 18:59:06,569 -- CryptoMonkey -- 23 -- DEBUG -- logger was initialized
+2023-10-11 18:59:06,569 -- CryptoMonkey.TelegramBot -- 57 -- INFO -- Включена отправка сообщений в телеграм
+2023-10-11 18:59:08,647 -- CryptoMonkey.CryptoCoinBroker -- 94 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-11 18:59:14,398 -- CryptoMonkey.CryptoCoinBroker -- 115 -- INFO -- Все спотовые ненулевые балансы аккаунта пользователя успешно получены!
+2023-10-11 18:59:18,023 -- CryptoMonkey.CryptoCoinBroker -- 83 -- ERROR -- Данные по выбранной валютной паре успешно получены!
+2023-10-11 18:59:20,116 -- CryptoMonkey.CryptoCoinBroker -- 154 -- INFO -- Размещен ордер id : 898745010950956, Покупка_лимитная, пара: xrp/usdt!
+2023-10-11 18:59:31,445 -- CryptoMonkey.CryptoCoinBroker -- 174 -- INFO -- Отмена ордера id : 898745010950956, пара: xrp/usdt проведена успешно!
+2023-10-11 22:50:13,776 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 22:51:10,311 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:03:28,237 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:35:37,161 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:35:54,552 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:39:33,037 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:40:12,352 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:41:09,200 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:41:28,778 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:42:26,247 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:42:37,153 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:43:24,262 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:43:40,122 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:43:49,106 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:47:37,938 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:49:04,556 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:51:24,202 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:52:04,030 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:52:19,593 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:53:27,593 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:53:37,734 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:54:25,562 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:54:51,644 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-11 23:57:42,917 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:02:18,047 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:04:09,948 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:05:30,552 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:05:48,921 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:06:37,450 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:06:57,319 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:07:35,571 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:08:27,126 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:08:45,261 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:09:27,638 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:09:41,266 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:09:50,377 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:10:10,371 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:10:40,893 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:10:51,573 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:10:58,059 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:11:26,277 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:12:40,324 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:13:34,993 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:15:15,118 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:15:42,755 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:15:51,150 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:15:57,577 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:16:25,942 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:16:38,796 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:17:51,887 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:19:58,975 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:20:06,088 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:20:13,919 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:20:20,930 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:20:28,313 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:20:39,213 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:20:56,442 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:21:02,103 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:21:09,233 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:21:51,599 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:21:59,179 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:22:16,791 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:22:25,502 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:22:46,566 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:23:05,265 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:23:15,306 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:23:25,786 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:23:52,535 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:24:04,433 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:24:20,423 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:24:36,633 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:27:22,341 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:27:26,447 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:27:57,395 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:28:12,539 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:28:21,426 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:29:57,698 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:30:14,859 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:30:41,359 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:31:29,164 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:32:07,421 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:33:26,460 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:33:33,069 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:35:24,310 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:36:29,610 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:36:57,580 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:40:55,315 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:46:40,181 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:48:25,317 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:51:55,343 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:52:14,728 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:52:27,722 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:56:03,916 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:56:15,992 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 00:57:09,248 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 11:34:45,919 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 11:36:22,606 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 11:36:52,603 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 11:37:02,772 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 11:38:01,747 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 11:38:07,794 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 11:39:21,773 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 11:41:55,828 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 11:44:01,389 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 11:45:45,750 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 11:56:07,652 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 11:57:18,872 -- parserCrypto -- 26 -- DEBUG -- logger was initialized
+2023-10-12 11:57:30,716 -- parserCrypto.CryptoMonkeyGui -- 139 -- ERROR -- 'NoneType' object is not iterable
+2023-10-12 11:57:41,232 -- parserCrypto.CryptoMonkeyGui -- 139 -- ERROR -- 'NoneType' object is not iterable
+2023-10-12 11:57:50,696 -- parserCrypto.CryptoMonkeyGui -- 139 -- ERROR -- 'NoneType' object is not iterable
+2023-10-12 17:14:22,787 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:17:24,721 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:20:58,099 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:21:26,566 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:21:34,382 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:22:19,138 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:22:27,427 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:22:29,214 -- parserCrypto.CryptoMonkeyGui -- 215 -- ERROR -- 'KeysInputWindow' object has no attribute 'setKeysDataFromFile'
+2023-10-12 17:22:47,855 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:29:27,087 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:33:20,767 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:34:57,188 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:35:32,312 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:35:57,132 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:36:36,003 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:36:37,875 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- 'str' object has no attribute 'get'
+2023-10-12 17:37:01,172 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:37:02,923 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- dictionary update sequence element #0 has length 1; 2 is required
+2023-10-12 17:37:27,941 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:37:58,511 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:38:15,976 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:38:18,213 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- dictionary update sequence element #0 has length 1; 2 is required
+2023-10-12 17:47:00,465 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:47:02,961 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2023-10-12 17:47:47,104 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:48:02,326 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:48:04,870 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2023-10-12 17:48:19,436 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:49:52,865 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:49:54,958 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2023-10-12 17:51:04,178 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:51:06,437 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- Expecting ':' delimiter: line 1 column 81 (char 80)
+2023-10-12 17:51:40,852 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:52:01,763 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:54:18,351 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:55:06,822 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:56:23,727 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 17:57:22,809 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:05:20,793 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:05:23,803 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- name 'apiKey' is not defined
+2023-10-12 18:05:48,101 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:05:49,944 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- cannot access local variable 'apiKeys' where it is not associated with a value
+2023-10-12 18:06:07,183 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:06:09,135 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- cannot access local variable 'apiKeys' where it is not associated with a value
+2023-10-12 18:06:21,319 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:06:23,091 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- cannot access local variable 'apiKeys' where it is not associated with a value
+2023-10-12 18:07:22,039 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:07:23,875 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- cannot access local variable 'apiKeys' where it is not associated with a value
+2023-10-12 18:07:48,861 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:07:50,689 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- cannot access local variable 'apiKeys' where it is not associated with a value
+2023-10-12 18:11:19,735 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:14:32,245 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:14:57,912 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:28:12,090 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:35:04,449 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:35:46,808 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:37:12,494 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:46:15,366 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:46:18,075 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- Expecting value: line 1 column 1 (char 0)
+2023-10-12 18:46:19,414 -- parserCrypto.CryptoMonkeyGui -- 216 -- ERROR -- Expecting value: line 1 column 1 (char 0)
+2023-10-12 18:46:56,861 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:48:12,190 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:48:58,045 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:50:22,018 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:52:12,392 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:52:55,638 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:56:02,925 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:57:13,963 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:57:35,444 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:58:07,434 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 18:59:35,460 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 19:02:23,680 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 19:03:33,370 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 19:06:09,067 -- parserCrypto -- 27 -- DEBUG -- logger was initialized
+2023-10-12 20:04:45,276 -- CryptoMonkey -- 23 -- DEBUG -- logger was initialized
+2023-10-12 20:04:45,345 -- CryptoMonkey.CryptoCoinBroker -- 92 -- INFO -- Запущена функция получения баланса биржи huobi.
+2023-10-12 20:04:46,663 -- CryptoMonkey.CryptoCoinBroker -- 113 -- INFO -- Все спотовые ненулевые балансы аккаунта пользователя успешно получены!
+2023-10-12 20:04:47,472 -- CryptoMonkey.CryptoCoinBroker -- 81 -- ERROR -- Данные по выбранной валютной паре успешно получены!
+2023-10-12 20:04:48,487 -- CryptoMonkey.CryptoCoinBroker -- 152 -- INFO -- Размещен ордер id : 898757669160184, Покупка_лимитная, пара: xrp/usdt!
+2023-10-12 20:04:59,898 -- CryptoMonkey.CryptoCoinBroker -- 172 -- INFO -- Отмена ордера id : 898757669160184, пара: xrp/usdt проведена успешно!
+2023-10-12 20:05:00,768 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 20:51:53,310 -- CryptoMonkey -- 23 -- DEBUG -- logger was initialized
+2023-10-12 20:51:53,310 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 20:52:11,868 -- parserCrypto.CryptoMonkeyGui -- 307 -- ERROR -- CryptoMonkeyGui.enableTradeSettings() missing 1 required positional argument: 'availableExchanges'
+2023-10-12 20:54:56,680 -- CryptoMonkey -- 23 -- DEBUG -- logger was initialized
+2023-10-12 20:54:56,680 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 20:55:00,747 -- parserCrypto.CryptoMonkeyGui -- 307 -- ERROR -- CryptoMonkeyGui.enableTradeSettings() missing 2 required positional arguments: 'self' and 'availableExchanges'
+2023-10-12 20:58:25,690 -- CryptoMonkey -- 23 -- DEBUG -- logger was initialized
+2023-10-12 20:58:25,690 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 20:58:30,519 -- parserCrypto.CryptoMonkeyGui -- 307 -- ERROR -- CryptoMonkeyGui.enableTradeSettings() missing 1 required positional argument: 'availableExchanges'
+2023-10-12 20:58:33,640 -- parserCrypto.CryptoMonkeyGui -- 307 -- ERROR -- CryptoMonkeyGui.enableTradeSettings() missing 1 required positional argument: 'availableExchanges'
+2023-10-12 20:58:35,604 -- parserCrypto.CryptoMonkeyGui -- 307 -- ERROR -- CryptoMonkeyGui.enableTradeSettings() missing 1 required positional argument: 'availableExchanges'
+2023-10-12 20:58:40,345 -- parserCrypto.CryptoMonkeyGui -- 307 -- ERROR -- CryptoMonkeyGui.enableTradeSettings() missing 1 required positional argument: 'availableExchanges'
+2023-10-12 20:58:49,524 -- parserCrypto.CryptoMonkeyGui -- 307 -- ERROR -- CryptoMonkeyGui.enableTradeSettings() missing 1 required positional argument: 'availableExchanges'
+2023-10-12 21:01:15,083 -- CryptoMonkey -- 23 -- DEBUG -- logger was initialized
+2023-10-12 21:01:15,083 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:01:18,878 -- parserCrypto.CryptoMonkeyGui -- 307 -- ERROR -- 'Ui_CryptoMonkey' object has no attribute 'enableTradeSettings'
+2023-10-12 21:02:25,301 -- CryptoMonkey -- 23 -- DEBUG -- logger was initialized
+2023-10-12 21:02:25,301 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:02:34,505 -- CryptoMonkey -- 23 -- DEBUG -- logger was initialized
+2023-10-12 21:02:34,505 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:13:23,437 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:13:28,057 -- parserCrypto.CryptoMonkeyGui -- 309 -- ERROR -- 'QStandardItem' object has no attribute 'setDisabled'
+2023-10-12 21:13:41,679 -- parserCrypto.CryptoMonkeyGui -- 309 -- ERROR -- 'QStandardItem' object has no attribute 'setDisabled'
+2023-10-12 21:14:12,585 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:14:15,859 -- parserCrypto.CryptoMonkeyGui -- 310 -- ERROR -- 'QStandardItem' object has no attribute 'setDisabled'
+2023-10-12 21:14:23,371 -- parserCrypto.CryptoMonkeyGui -- 310 -- ERROR -- 'QStandardItem' object has no attribute 'setDisabled'
+2023-10-12 21:14:39,085 -- parserCrypto.CryptoMonkeyGui -- 310 -- ERROR -- 'QStandardItem' object has no attribute 'setDisabled'
+2023-10-12 21:16:09,010 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:16:12,773 -- parserCrypto.CryptoMonkeyGui -- 311 -- ERROR -- 'QStandardItem' object has no attribute 'setDisabled'
+2023-10-12 21:16:17,354 -- parserCrypto.CryptoMonkeyGui -- 311 -- ERROR -- 'QStandardItem' object has no attribute 'setDisabled'
+2023-10-12 21:17:41,068 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:17:46,985 -- parserCrypto.CryptoMonkeyGui -- 312 -- ERROR -- 'QStandardItem' object has no attribute 'setDisabled'
+2023-10-12 21:18:30,656 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:18:40,906 -- parserCrypto.CryptoMonkeyGui -- 312 -- ERROR -- 'QStandardItem' object has no attribute 'setDisabled'
+2023-10-12 21:19:53,394 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:21:50,974 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:22:18,533 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:26:41,590 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:50:06,174 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:52:55,134 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:55:14,669 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:55:51,845 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 21:57:49,881 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 22:00:08,125 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 22:02:10,229 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 22:05:08,674 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 22:11:27,513 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 22:12:10,338 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 22:13:56,813 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 22:15:08,178 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 22:16:45,730 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 22:18:40,708 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 22:48:26,896 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 23:08:07,962 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-12 23:11:09,862 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:40:53,050 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:41:44,106 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:43:27,376 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:43:49,796 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:44:18,802 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:45:09,514 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:51:06,247 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:51:11,425 -- parserCrypto.CryptoMonkeyGui -- 286 -- INFO -- ParsThread.__init__() takes 1 positional argument but 2 were given
+2023-10-13 10:53:18,307 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:54:59,031 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:55:39,164 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:56:20,212 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:56:22,322 -- parserCrypto.CryptoMonkeyGui -- 170 -- INFO -- ParsThread.__init__() missing 1 required positional argument: 'exchange'
+2023-10-13 10:57:04,150 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:57:43,043 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:57:59,164 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 10:58:00,883 -- parserCrypto.CryptoMonkeyGui -- 170 -- INFO -- tuple index out of range
+2023-10-13 10:58:35,808 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:05:28,295 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:09:38,100 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:10:18,300 -- parserCrypto.CryptoMonkeyGui -- 266 -- INFO -- could not convert string to float: '0,45'
+2023-10-13 13:12:00,611 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:14:34,925 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:16:15,916 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:17:52,180 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:18:15,730 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:19:20,176 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:20:33,647 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:23:11,265 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:26:43,521 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:28:05,233 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:31:03,655 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:33:32,245 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:37:00,459 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:37:27,403 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:40:22,687 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:40:36,460 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:41:05,669 -- parserCrypto.CryptoMonkeyGui -- 283 -- ERROR -- 'NoneType' object has no attribute 'row'
+2023-10-13 13:43:06,924 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:43:30,391 -- parserCrypto.CryptoMonkeyGui -- 283 -- ERROR -- 'NoneType' object has no attribute 'row'
+2023-10-13 13:47:25,303 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:48:13,778 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:48:29,541 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:48:59,332 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:49:48,148 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:49:49,950 -- parserCrypto.CryptoMonkeyGui -- 288 -- ERROR -- 'NoneType' object has no attribute 'checkState'
+2023-10-13 13:51:33,138 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:55:24,532 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:55:31,341 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:55:46,021 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:56:54,224 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:57:30,875 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:57:34,653 -- parserCrypto.CryptoMonkeyGui -- 288 -- ERROR -- 'NoneType' object has no attribute 'text'
+2023-10-13 13:57:36,741 -- parserCrypto.CryptoMonkeyGui -- 288 -- ERROR -- 'NoneType' object has no attribute 'text'
+2023-10-13 13:59:18,108 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:59:20,440 -- parserCrypto.CryptoMonkeyGui -- 297 -- ERROR -- item(self, row: int, column: int): not enough arguments
+2023-10-13 13:59:23,637 -- parserCrypto.CryptoMonkeyGui -- 297 -- ERROR -- item(self, row: int, column: int): not enough arguments
+2023-10-13 13:59:46,076 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 13:59:48,097 -- parserCrypto.CryptoMonkeyGui -- 297 -- ERROR -- item(self, row: int, column: int): not enough arguments
+2023-10-13 13:59:49,562 -- parserCrypto.CryptoMonkeyGui -- 297 -- ERROR -- item(self, row: int, column: int): not enough arguments
+2023-10-13 13:59:51,743 -- parserCrypto.CryptoMonkeyGui -- 297 -- ERROR -- item(self, row: int, column: int): not enough arguments
+2023-10-13 14:00:11,401 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:00:13,536 -- parserCrypto.CryptoMonkeyGui -- 297 -- ERROR -- setText(self, atext: str): argument 1 has unexpected type 'QTableWidgetItem'
+2023-10-13 14:01:13,740 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:01:15,626 -- parserCrypto.CryptoMonkeyGui -- 297 -- ERROR -- 'NoneType' object has no attribute 'text'
+2023-10-13 14:02:39,634 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:02:41,734 -- parserCrypto.CryptoMonkeyGui -- 297 -- ERROR -- 'NoneType' object has no attribute 'text'
+2023-10-13 14:02:43,726 -- parserCrypto.CryptoMonkeyGui -- 297 -- ERROR -- 'NoneType' object has no attribute 'text'
+2023-10-13 14:08:27,101 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:08:29,859 -- parserCrypto.CryptoMonkeyGui -- 276 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:08:37,218 -- parserCrypto.CryptoMonkeyGui -- 276 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:08:43,439 -- parserCrypto.CryptoMonkeyGui -- 276 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:08:43,986 -- parserCrypto.CryptoMonkeyGui -- 276 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:08:44,324 -- parserCrypto.CryptoMonkeyGui -- 276 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:10:19,957 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:10:21,823 -- parserCrypto.CryptoMonkeyGui -- 278 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:12:14,798 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:12:17,305 -- parserCrypto.CryptoMonkeyGui -- 279 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:13:02,799 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:13:05,105 -- parserCrypto.CryptoMonkeyGui -- 280 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:13:36,390 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:13:38,923 -- parserCrypto.CryptoMonkeyGui -- 283 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:13:39,714 -- parserCrypto.CryptoMonkeyGui -- 283 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:14:56,853 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:14:58,673 -- parserCrypto.CryptoMonkeyGui -- 284 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:14:59,142 -- parserCrypto.CryptoMonkeyGui -- 284 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:15:15,194 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:15:17,122 -- parserCrypto.CryptoMonkeyGui -- 284 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:15:17,622 -- parserCrypto.CryptoMonkeyGui -- 284 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:15:18,438 -- parserCrypto.CryptoMonkeyGui -- 284 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:15:32,778 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:15:34,319 -- parserCrypto.CryptoMonkeyGui -- 284 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:15:34,761 -- parserCrypto.CryptoMonkeyGui -- 284 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:15:35,361 -- parserCrypto.CryptoMonkeyGui -- 284 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:15:35,961 -- parserCrypto.CryptoMonkeyGui -- 284 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:15:36,261 -- parserCrypto.CryptoMonkeyGui -- 284 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:16:15,340 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:16:17,058 -- parserCrypto.CryptoMonkeyGui -- 284 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:16:17,497 -- parserCrypto.CryptoMonkeyGui -- 284 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:16:17,912 -- parserCrypto.CryptoMonkeyGui -- 284 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:20:33,064 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:20:35,036 -- parserCrypto.CryptoMonkeyGui -- 277 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:20:35,890 -- parserCrypto.CryptoMonkeyGui -- 277 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:20:36,391 -- parserCrypto.CryptoMonkeyGui -- 277 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:20:36,569 -- parserCrypto.CryptoMonkeyGui -- 277 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:20:36,707 -- parserCrypto.CryptoMonkeyGui -- 277 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:28:12,116 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:28:41,500 -- parserCrypto.CryptoMonkeyGui -- 408 -- INFO -- 'NoneType' object has no attribute 'setText'
+2023-10-13 14:31:46,082 -- parserCrypto -- 29 -- DEBUG -- logger was initialized
+2023-10-13 14:32:01,117 -- parserCrypto.CryptoMonkeyGui -- 279 -- INFO -- Выберите строку с ордером для отмены!
+2023-10-13 14:32:08,612 -- parserCrypto.CryptoMonkeyGui -- 415 -- INFO -- 'NoneType' object has no attribute 'text'
