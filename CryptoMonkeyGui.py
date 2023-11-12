@@ -1,14 +1,18 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMainWindow, QDialog
 from PyQt5.QtCore import QThread
+
 from Gui_CryptoMonkeySample import Ui_CryptoMonkey
 from Gui_ApiKeysInputWindowSample import Ui_Dialog_apiKeysInput
 from Gui_BalanceWindowSample import Ui_BalanceWindow
 from Gui_TradeSettingsWindowSample import Ui_TradeSettingsWindow
+
 from ProcessingCore import Settings
 from ProcessingCore import ParsThread
 from ProcessingCore import ProcessThread
+
 from TelegramBot import TelegramBot
+
 import os
 import sys
 import logging
@@ -291,6 +295,7 @@ class CryptoMonkeyGui(QMainWindow):
 
         CryptoMonkeyGui.imitationMode = self.ui.checkBox_enableImitatitonTrade.isChecked()
         Settings.imitationMode = self.ui.checkBox_enableImitatitonTrade.isChecked()
+
 
     ### Методы запуска функций получения/передачи данных в отдельных потоках ###
 

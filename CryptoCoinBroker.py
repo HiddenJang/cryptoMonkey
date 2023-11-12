@@ -142,6 +142,7 @@ class CryptoBroker():
 
     def getOpenOrders(self, symbol: str) -> list:
         """Получение данных об открытых ордерах на выбранной бирже"""
+
         try:
             if self.exchange == 'huobi':
                 accountId = self.getAccountId()
@@ -155,6 +156,7 @@ class CryptoBroker():
 
     def getOrderState(self, orderId: int, imitationMode: bool) -> dict:
         """Получение данных об ордере по ID"""
+
         try:
             if self.exchange == 'huobi':
                 if not imitationMode:
@@ -168,7 +170,6 @@ class CryptoBroker():
         except Exception as ex:
             logger.error(ex)
 
-
     def cancelOrder(
             self,
             symbol: str,
@@ -177,7 +178,6 @@ class CryptoBroker():
     ) -> str:
         """Метод отмены выставленного ордера"""
 
-        #symbol = currencyData["pare"].replace("/", "")
         try:
             if imitationMode:
                 canceledOrderId = orderId

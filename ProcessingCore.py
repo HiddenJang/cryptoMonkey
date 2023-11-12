@@ -210,6 +210,13 @@ class ProcessThread(QObject):
 
         broker = CryptoBroker(Settings.exchange, (Settings.keys[0], Settings.keys[1]))
         while True:
+
+            if Settings.loopStopCond:
+                Settings.loopStopCond = False
+                logger.info("Торговля прекращена по требованию пользователя")
+                TelegramBot.sendText("Торговля прекращена по требованию пользователя")
+                return
+
             Settings.cycleNum += 1
 
             currencyData = broker.getCurrenciesPrice(Settings.quoteCurrency, Settings.baseCurrency)
@@ -365,9 +372,6 @@ class Observer:
                     break
 
                 elif Settings.loopStopCond:
-                    Settings.loopStopCond = False
-                    logger.info("Завершение торговли по требованию пользователя")
-                    TelegramBot.sendText("Завершение торговли по требованию пользователя")
                     return
 
                 else:
@@ -450,9 +454,6 @@ class PositiveBranch:
                 break
 
             elif Settings.loopStopCond:
-                Settings.loopStopCond = False
-                logger.info("Завершение торговли по требованию пользователя")
-                TelegramBot.sendText("Завершение торговли по требованию пользователя")
                 return
 
             else:
@@ -517,9 +518,6 @@ class PositiveBranch:
                 break
 
             elif Settings.loopStopCond:
-                Settings.loopStopCond = False
-                logger.info("Завершение торговли по требованию пользователя")
-                TelegramBot.sendText("Завершение торговли по требованию пользователя")
                 return
 
             else:
@@ -633,9 +631,6 @@ class NegativeBranch:
                 break
 
             elif Settings.loopStopCond:
-                Settings.loopStopCond = False
-                logger.info("Завершение торговли по требованию пользователя")
-                TelegramBot.sendText("Завершение торговли по требованию пользователя")
                 return
 
             else:
@@ -715,9 +710,6 @@ class NegativeBranch:
                 break
 
             elif Settings.loopStopCond:
-                Settings.loopStopCond = False
-                logger.info("Завершение торговли по требованию пользователя")
-                TelegramBot.sendText("Завершение торговли по требованию пользователя")
                 return
 
             else:
