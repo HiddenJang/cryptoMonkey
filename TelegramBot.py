@@ -12,8 +12,8 @@ class TelegramBot():
         """Отправка текста"""
         if TelegramBot.messageSwitch:
             try:
-                token = "5619069193:AAGNIzLkQUo7mX4aglRXRnvc904C_4jbqCM" #токен бота
-                chat_id = "@CryptoMonkey_python_project" #айди или ссылка-приглашение группы в телеграм
+                token = "" #токен бота
+                chat_id = "" #айди или ссылка-приглашение группы в телеграм
                 url_req = "https://api.telegram.org/bot" + token + "/sendMessage" + "?chat_id=" + chat_id + "&text=" "Докладываю:\n" + text
                 requests.get(url_req)
             except Exception as ex:
@@ -25,8 +25,8 @@ class TelegramBot():
         """Отправка изображений"""
         if TelegramBot.messageSwitch:
             try:
-                token = "5619069193:AAGNIzLkQUo7mX4aglRXRnvc904C_4jbqCM"  # токен бота
-                chat_id = "@CryptoMonkey_python_project"  # айди или ссылка-приглашение группы в телеграм
+                token = ""  # токен бота
+                chat_id = ""  # айди или ссылка-приглашение группы в телеграм
                 request_url = "https://api.telegram.org/bot" + token + "/sendMediaGroup"
                 params = {"chat_id": chat_id, "media":"""[{"type": "photo", "media": "attach://random-name-1"}]"""}
                 files = {"random-name-1": open(f"{pngPath}", "rb")} # ссылка на локальный файл
@@ -40,8 +40,8 @@ class TelegramBot():
         """Отправка файлов"""
         if TelegramBot.messageSwitch:
             try:
-                token = "5619069193:AAGNIzLkQUo7mX4aglRXRnvc904C_4jbqCM"  # токен бота
-                chat_id = "@CryptoMonkey_python_project"  # айди или ссылка-приглашение группы в телеграм
+                token = ""  # токен бота
+                chat_id = ""  # айди или ссылка-приглашение группы в телеграм
                 request_url = "https://api.telegram.org/bot" + token + "/sendMediaGroup"
                 params = {"chat_id": chat_id, "media":"""[{"type": "document", "media": "attach://random-name-1"}]"""}
                 files = {"random-name-1": open(f"{filePath}", "rb")} # ссылка на локальный файл
