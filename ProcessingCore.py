@@ -24,7 +24,7 @@ class ParsThread(QObject):
 
     finishSignal = QtCore.pyqtSignal(list)
 
-    keysPath = 'D:\\Pasha\\python\\projects\\user_data.txt'  # путь к файлу с ключами от аккаунта пользователя
+    keysPath = 'D:\\python\\projects'  # путь к файлу с ключами от аккаунта пользователя
     baseCoin = 'USDT'
     circularRefreshOn = False
     refreshTime = 0
