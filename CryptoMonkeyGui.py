@@ -54,7 +54,7 @@ class CryptoMonkeyGui(QMainWindow):
     infoUnfilledRowNumber = 0
     ordersUnfilledRowNumber = 0
     unfilledDiagRowNum = 0
-    keysPath = 'D:\\Pasha\\python\\projects\\user_data.txt'  # путь к файлу с ключами от аккаунта пользователя
+    keysPath = 'D:\\Pasha\\python\\projects\\.txt'  # путь к файлу с ключами от аккаунта пользователя
     openOrdersListPath = path + '\\open_orders.txt'  # путь к файлу с перечнем открытых ордеров
     imitationMode = False
 
