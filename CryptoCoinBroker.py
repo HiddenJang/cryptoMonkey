@@ -209,8 +209,8 @@ class CryptoBroker():
 ## Код для автономной отработки модуля (удалить после отработки) ##
 if __name__ == '__main__':
     import os
-    logsPath = 'D:\\Pasha\\python\\projects\\cryptoMonkey\\Logs.txt'  # путь к файлу с логами
-    keysPath = 'D:\\Pasha\\python\\projects\\user_data.txt'  # путь к файлу с ключами от аккаунта пользователя
+    logsPath = 'D:\\python\\projects\\'  # путь к файлу с логами
+    keysPath = 'D:\\python\\projects\\'  # путь к файлу с ключами от аккаунта пользователя
     if os.path.exists(keysPath):
         with open(keysPath, "r") as file:
             keys = file.readline().strip()
